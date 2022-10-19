@@ -1,14 +1,20 @@
-﻿/*Напишите программу, которая на вход принимает число и выдаёт его квадрат (число умноженное на само себя).
+﻿/*Напишите программу, которая на вход принимает два числа и проверяет, является ли второе число квадратом первого.
+a = 5; b = 25 -> да 
+a = 2; b = 10 -> нет 
+a = 9; b = -3 -> нет 
+a = -3; b = 9 -> да
+*/
 
-Например:
-4 -> 16 
--3- -> 9 
--7 -> 49*/
+Console.WriteLine("Введите два числа");
 
-Console.WriteLine("Введите число");
-string input = Console.ReadLine();
-int number = Convert.ToInt32(input);
+int a = Convert.ToInt32(Console.ReadLine());
+int b = Convert.ToInt32(Console.ReadLine());
 
-int sqrNumber = number * number;
-
-Console.WriteLine("Квадрат числа " + number + " равен " + sqrNumber);
+if (b == a * a)
+{
+    Console.WriteLine("Является");
+}
+else 
+{
+    Console.WriteLine("Не является");
+}
