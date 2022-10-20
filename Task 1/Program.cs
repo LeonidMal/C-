@@ -8,12 +8,8 @@ Console.WriteLine("Введите три числа");
 int number1 = Convert.ToInt32(Console.ReadLine());
 int number2 = Convert.ToInt32(Console.ReadLine());
 int number3 = Convert.ToInt32(Console.ReadLine());
-int maxNum = 0;
+int maxNum = number1;
 
-if (number1 > maxNum)
-{
-    maxNum = number1;
-} 
 if (number2 > maxNum)
 {
     maxNum = number2;
